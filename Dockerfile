@@ -1,8 +1,8 @@
-FROM alpine
+FROM node:lts-alpine
 
 WORKDIR /opt/app
 
-RUN apk add --no-cache nodejs curl tzdata
+RUN apk add --no-cache curl tzdata
 
 ENV TIME_ZONE=Asia/Shanghai 
 
